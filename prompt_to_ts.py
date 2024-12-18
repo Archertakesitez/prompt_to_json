@@ -11,8 +11,8 @@ def prompt_to_ts(text: str, schema: str):
     Returns:
     schema instance filled with values, in JSON format
     """
-    AZURE_OPENAI_API_KEY = "febbfd0a88544dbeb0b2536265394032"
-    AZURE_OPENAI_ENDPOINT = "https://kineviz.openai.azure.com"
+    AZURE_OPENAI_API_KEY = "replace it here"
+    AZURE_OPENAI_ENDPOINT = "replace it here"
     DEPLOYMENT_NAME = "gpt-4o-mini"
     client = AzureOpenAI(
         api_key=AZURE_OPENAI_API_KEY,
