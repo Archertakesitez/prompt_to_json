@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Example</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/styles.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>HTML Forms</h2>
+    <form method="post" action="/submit-form">
+        <label for="doc">text:</label>
+        <input type="text" id="doc" name="doc" value="Bananas are my favorite food.">
+        <label for="schema">schema:</label>
+        <textarea id="schema" name="schema" required>type Result = {
+            "Does this text mention bananas?": boolean;
+            "Sentiment about bananas.": string;
+            "Pairs of words": Array<[string, string]>;
+            "Number of words": number;
+            "Contrapositive": string;
+        }</textarea>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>

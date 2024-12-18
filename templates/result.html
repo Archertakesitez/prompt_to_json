@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Submission Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/return.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Form Submission Result</h1>
+        <div class="answer-box">
+            {{ answer }}
+        </div>
+        <a href="{{ url_for('name') }}" class="back-button">Back</a>
+    </div>
+</body>
+</html>
